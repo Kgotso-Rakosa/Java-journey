@@ -43,7 +43,7 @@ public class Student {
         public void setMark2(double mark2){
         this.mark2=mark2;
     }
-            public void setMark(double mark3){
+            public void setMark3(double mark3){
         this.mark3=mark3;
     }
     public String getName(){

@@ -26,7 +26,7 @@ public class GradeCalculator {
         System.out.println("Enter mark 1: ");
         mark1=input.nextDouble(); 
         
-            if (mark1 <= 100) {
+            if (mark1>=0 &&mark1 <= 100) {
                 break;
             }
             System.out.println("Mark cannot exceed 100");
@@ -36,7 +36,7 @@ public class GradeCalculator {
         System.out.println("Enter mark 2: ");
         mark2=input.nextDouble();  
         
-            if (mark2 <= 100) {
+            if (mark2>=0 &&mark2 <= 100) {
                 break;
             }
             System.out.println("Mark cannot exceed 100");
@@ -46,7 +46,7 @@ public class GradeCalculator {
         System.out.println("Enter mark 3: ");
         mark3=input.nextDouble();
         
-            if (mark3 <= 100) {
+            if (mark3>=0 && mark3 <= 100) {
                 break;
             }
             System.out.println("Mark cannot exceed 100");
