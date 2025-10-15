@@ -12,7 +12,7 @@ public class AccountTest {
         //declaration of variables
         String name;
         int accountNumber;
-        double balance,depositAmount,withdrawalAmount;
+        double depositAmount,withdrawalAmount;
         
         //scanner object
         Scanner input=new Scanner(System.in);
