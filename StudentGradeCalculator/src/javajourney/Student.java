@@ -59,13 +59,35 @@ public class Student {
         return mark3;
     }
     //method 
+    /**
+     * This method calculate the average using the 3 entered marks
+     * @param mark1
+     * @param mark2
+     * @param mark3
+     * @return 
+     */
     public double calcAverage(double mark1,double mark2,double mark3){
         double average=(mark1+mark2+mark3)/3;
-        return average;
+        double roundedAverage=Math.round(average);
+        return roundedAverage ;
+    }
+    
+    /**
+     * This method is to determine whether a Student passed or failed.
+     */
+    public void displayResult(){
+        double average=calcAverage(mark1, mark2, mark3);
+        
+        if (average>= 50) {
+            System.out.println("You have PASSED!!");
+        }else{
+            System.out.println("You have FAILED!!");
+        }
     }
     
     //tostring
     public String toString(){
-        return "Name: "+name+", Marks: "+ mark1 + ","+mark2+","+mark3;
+        return "Name: "+name+", Marks: 1:"+ mark1 + ",2:"+mark2+
+                ",3:"+mark3+ ", Average:"+calcAverage(mark1, mark2, mark3);
     }
 }
