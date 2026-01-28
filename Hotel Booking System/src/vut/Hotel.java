@@ -14,7 +14,7 @@ public class Hotel {
     
     //default constructor
     public Hotel(){
-        this(" ",0,0.0,false);
+        this("none",0,0.0,false);
     }
     
     //parameterised constructor
